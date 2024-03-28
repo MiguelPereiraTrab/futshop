@@ -13,7 +13,7 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                <button id="buttonLogin" onClick={this.handleButtonClick}>Odeio isto</button> <p />
+                <button id="buttonLogin" onClick={this.handleButtonClick}>Odeio isto porque é o monhê a dar a cadeira</button> <p />
                 <button id="buttonRegisto" onClick={this.handleButtonClick}>Odeio isto mas registo</button>
             </div>
         );
