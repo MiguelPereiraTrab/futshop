@@ -11,9 +11,10 @@ class App extends Component {
       <div className="App">
         <Router> 
           <Routes>
-          <Route index element={<HomePage />} />
+            <Route index element={<HomePage />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Registar" element={<Registar />} />
+            
           </Routes>
         </Router>
       </div>
