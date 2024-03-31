@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import React, { Component } from 'react';
 import Login from './Login';
-import Registar from './Registar';
 import HomePage from './HomePage';
 
 class App extends Component {
@@ -13,8 +12,7 @@ class App extends Component {
           <Routes>
             <Route index element={<HomePage />} />
             <Route path="/Login" element={<Login />} />
-            <Route path="/Registar" element={<Registar />} />
-            
+            <Route path="/HomePage" exact component={<HomePage />} />
           </Routes>
         </Router>
       </div>

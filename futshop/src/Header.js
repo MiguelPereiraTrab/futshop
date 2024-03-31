@@ -14,13 +14,16 @@ class Header extends Component {
     render() {
         // Verifica se está na página de login
         const isLoginPage = this.props.isLoginPage;
-        const isRegistarPage = this.props.isRegistarPage
 
         return(
             <div className="header">
                 <div className="header__left">
-                    <img className="logo" src="./images/logo.jpg" alt=""/>
-                    <h2>FutShop</h2>
+                    <a href="/">
+                    <img className="logo" src="./images/logo.jpg" alt="" /></a>
+                    <a href="/">
+                        <h2 >FutShop</h2>
+                    </a>
+                   
                 </div>
                 <div className="header__center">
                     <ul className="header__lists">
@@ -40,7 +43,7 @@ class Header extends Component {
                     </ul>
                 </div>
                 <div className="header__right">
-                    {!isRegistarPage && <button id="Registar" onClick={this.handleButtonClick}>Registar</button>}
+
                     {!isLoginPage && <button id="Login" onClick={this.handleButtonClick}>Login</button>}
                 </div>
             </div>
