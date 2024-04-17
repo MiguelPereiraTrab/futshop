@@ -9,7 +9,7 @@
 
 body{
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #b5ffaf, #7cff5e);
+    background: linear-gradient(to right, rgb(253, 210, 207), rgb(200, 115, 111));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ body{
 }
 
 .container button{
-    background-color: #2e7d32;
+    background-color: rgb(101, 20, 15);
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -76,7 +76,7 @@ body{
 }
 
 .container input{
-    background-color: #d0f4c8;
+    background-color: rgb(255, 159, 154);
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
@@ -161,9 +161,9 @@ body{
 }
 
 .toggle{
-    background-color: #2e7d32;
+    background-color: rgb(101, 20, 15) ;
     height: 100%;
-    background: linear-gradient(to right, #43a047, #2e7d32);
+    background: linear-gradient(to right, rgb(138, 28, 22), rgb(101, 20, 15));
     color: #fff;
     position: relative;
     left: -100%;

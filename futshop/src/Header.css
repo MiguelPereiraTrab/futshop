@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: green;
+    background-color: rgb(101, 20, 15);
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@
 
 .header__left >a >h2{
     font-size: 20px;
-    color: white;
+    color: rgb(21, 21, 21);
 }
 
 .header__center{
@@ -44,19 +44,24 @@
     align-items: center;
 }
 
-.header__lists >li{
-    list-style-type: none;
-    padding: 10px;
-    background-color: black;
-
+.header__lists >button{
+    padding: 10px 20px; 
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: rgb(21, 21, 21);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    text-decoration: none;
+  
 }
-.header__lists >li >a:hover{
-    color: lightgreen;
+.header__lists >button >a:hover{
+    color: rgb(101, 20, 15);
 }
 
 .header__lists >li >a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .header__centerMenu{
@@ -66,12 +71,20 @@
     margin-right: 5px;
 
 }
+
+
+
 .header__centerMenu >button{
-    padding: 12px;
-    background-color: black;
-    font-size: 13px;
-    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: rgb(21, 21, 21);
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
+
 }
+
 .dropDown__header{
 
     border-radius: 10px;
@@ -86,6 +99,14 @@
     background-color: white;
 }
 
+
+
+.header__centerMenu >button:hover {
+    background-color: rgb(101, 20, 15); 
+    color: white; 
+}
+
+
 .dropDown__header >a{
     text-decoration: none;
     padding: 10px;
@@ -94,11 +115,11 @@
     justify-content: flex-start;
     padding-left: 10px;
     padding-right: 10px;
-    color: black;
+    color: rgb(0,0,0);
 }
 .dropDown__header >a:hover{
     border-radius: 10px;
-    background-color: lightgreen;
+    background-color: rgb(101, 20, 15);
 }
 .header__centerMenu:hover >.dropDown__header{
     display: block;
@@ -114,4 +135,8 @@
 .header__right >button{
     padding: 10px;
     margin: 0 10px;
+}
+a.noUnderline {
+    text-decoration: none;
+    color:black
 }

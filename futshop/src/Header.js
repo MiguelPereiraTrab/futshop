@@ -19,7 +19,7 @@ class Header extends Component {
             <div className="header">
                 <div className="header__left">
                     <a href="/">
-                    <img className="logo" src="./images/logo.jpg" alt="" /></a>
+                    <img className="logo" src="./images/logofutshop.jpeg" alt="" /></a>
                     <a href="/">
                         <h2 >FutShop</h2>
                     </a>
@@ -27,19 +27,41 @@ class Header extends Component {
                 </div>
                 <div className="header__center">
                     <ul className="header__lists">
-                        <li><a href="/">Home</a></li>
+                        <button><a href="#" className="noUnderline">Home</a></button>
                         <div className="header__centerMenu">
                             <button>Ligas</button>
                             <div className="dropDown__header">
-                                <a href="#"> Liga Portugal</a>
+                                <a href="#">Liga Betclic</a>
                                 <a href="#">LaLiga</a>
                                 <a href="#">Premier League</a>
                                 <a href="#">Bundesliga</a>
-                                <a href="#">Liga 1</a>
-                                <a href="#">Séria A</a>
+                                <a href="#">Ligue 1</a>
+                                <a href="#">Serie A</a>
                             </div>
                         </div>
-                        <li><a href="#">Desenvolvedores</a></li>
+                        <div className="header__centerMenu">
+                            <button>Retro</button>
+                            <div className="dropDown__header">
+                                <a href="#">Seleções</a>
+                                <a href="#">Liga Betclic</a>
+                                <a href="#">LaLiga</a>
+                                <a href="#">Premier League</a>
+                                <a href="#">Bundesliga</a>
+                                <a href="#">Ligue 1</a>
+                                <a href="#">Serie A</a>
+                            </div>
+                        </div>
+                        <div className="header__centerMenu">
+                            <button>Seleções</button>
+                            <div className="dropDown__header">
+                                <a href="#">Europa</a>
+                                <a href="#">África</a>
+                                <a href="#">América do Sul</a>
+                                <a href="#">América do Norte</a>
+                                <a href="#">Ásia</a>
+                            </div>
+                       </div>
+                        <button><a href="#" className="noUnderline">Desenvolvedores</a></button>
                     </ul>
                 </div>
                 <div className="header__right">
