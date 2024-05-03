@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
 import Header from '../js/Header';
-import './Betclic.css'; // Importando o arquivo CSS
-import Button from '@mui/material/Button';
-import GoogleIcon from '@mui/icons-material/Google';
+import './BetclicRetro.css'; // Importando o arquivo CSS
 
-class Betclic extends Component {
+
+class BetclicRetro extends Component {
   render() {
     const imageList = [
-      { src: '../images/benfas.jpg', text: 'Benfica', link: 'link_para_benfica' },
-      { src: 'caminho_para_sua_imagem2.jpg', text: 'Porto', link: 'link_para_porto' },
-      { src: 'caminho_para_sua_imagem3.jpg', text: 'Sporting', link: 'link_para_sporting' },
-      { src: 'caminho_para_sua_imagem4.jpg', text: 'Braga', link: 'link_para_braga' },
-      { src: '../images/benfas.jpg', text: 'Benfica Secundária', link: 'link_para_benfica' },
-      { src: 'caminho_para_sua_imagem2.jpg', text: 'Porto Secundária ', link: 'link_para_porto' },
-      { src: 'caminho_para_sua_imagem3.jpg', text: 'Sporting Secundária', link: 'link_para_sporting' },
-      { src: 'caminho_para_sua_imagem4.jpg', text: 'Braga Secundária', link: 'link_para_braga' },
+      { src: '../images/benfas.jpg', text: 'juven', link: 'link_para_benfica' },
+      { src: 'caminho_para_sua_imagem2.jpg', text: 'milan', link: 'link_para_porto' },
+      { src: 'caminho_para_sua_imagem3.jpg', text: 'juven', link: 'link_para_sporting' },
+      { src: 'caminho_para_sua_imagem4.jpg', text: 'juven', link: 'link_para_braga' },
+      { src: '../images/benfas.jpg', text: 'juven Secundária', link: 'link_para_benfica' },
+      { src: 'caminho_para_sua_imagem2.jpg', text: 'milan Secundária ', link: 'link_para_porto' },
+      { src: 'caminho_para_sua_imagem3.jpg', text: 'milan Secundária', link: 'link_para_sporting' },
+      { src: 'caminho_para_sua_imagem4.jpg', text: 'milan Secundária', link: 'link_para_braga' },
 
     ];
     
     return (
-      <div className="betclic">
+      <div className="BetclicRetro">
         <Header />
         <div className="linha1">
           <div className="image-container">
@@ -51,4 +50,4 @@ class Betclic extends Component {
   }
 }
 
-export default Betclic;
+export default BetclicRetro;

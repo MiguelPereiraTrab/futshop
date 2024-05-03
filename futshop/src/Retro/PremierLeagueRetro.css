@@ -1,0 +1,27 @@
+.PremierLeagueRetro {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-list-item {
+    margin: 10px;
+    margin-right: 20px; 
+  }
+  
+  .image-list-item img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+  }
+  
+  .linha1 {
+    margin-bottom: 30px; 
+  }
+  

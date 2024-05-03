@@ -33,22 +33,22 @@ class Header extends Component {
                             <div className="dropDown__header">
                                 <a href="../Ligas/Betclic">Liga Betclic</a>
                                 <a href="../Ligas/Laliga">LaLiga</a>
-                                <a href="#">Premier League</a>
-                                <a href="#">Bundesliga</a>
-                                <a href="#">Ligue 1</a>
-                                <a href="#">Serie A</a>
+                                <a href="../Ligas/PremierLeague">Premier League</a>
+                                <a href="../Ligas/Bundesliga">Bundesliga</a>
+                                <a href="../Ligas/Ligue1">Ligue 1</a>
+                                <a href="../Ligas/SerieA">Serie A</a>
                             </div>
                         </div>
                         <div className="header__centerMenu">
                             <button>Retro</button>
                             <div className="dropDown__header">
-                                <a href="#">Seleções</a>
-                                <a href="/Ligas/Betclic">Liga Betclic</a>
-                                <a href="#">LaLiga</a>
-                                <a href="#">Premier League</a>
-                                <a href="#">Bundesliga</a>
-                                <a href="#">Ligue 1</a>
-                                <a href="#">Serie A</a>
+                                <a href="../Retro/Selecoes">Seleções</a>
+                                <a href="../Retro/BetclicRetro">Liga Betclic</a>
+                                <a href="../Retro/LaligaRetro">LaLiga</a>
+                                <a href="../Retro/PremierLeagueRetro">Premier League</a>
+                                <a href="../Retro/BundesligaRetro">Bundesliga</a>
+                                <a href="../Retro/Ligue1Retro">Ligue 1</a>
+                                <a href="../Retro/SerieARetro">Serie A</a>
                             </div>
                         </div>
                         <div className="header__centerMenu">

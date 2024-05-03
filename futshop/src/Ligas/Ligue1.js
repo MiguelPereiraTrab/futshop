@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../js/Header';
-import './Betclic.css'; // Importando o arquivo CSS
-import Button from '@mui/material/Button';
-import GoogleIcon from '@mui/icons-material/Google';
+import './Ligue1.css'; // Importando o arquivo CSS
 
-class Betclic extends Component {
+
+class Ligue1 extends Component {
   render() {
     const imageList = [
       { src: '../images/benfas.jpg', text: 'Benfica', link: 'link_para_benfica' },
@@ -19,7 +18,7 @@ class Betclic extends Component {
     ];
     
     return (
-      <div className="betclic">
+      <div className="Ligue1">
         <Header />
         <div className="linha1">
           <div className="image-container">
@@ -51,4 +50,4 @@ class Betclic extends Component {
   }
 }
 
-export default Betclic;
+export default Ligue1;
