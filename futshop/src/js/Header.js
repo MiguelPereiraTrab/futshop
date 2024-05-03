@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Header.css';
+import '../css/Header.css';
 
 class Header extends Component {
     handleButtonClick = (e) => {
@@ -19,7 +19,7 @@ class Header extends Component {
             <div className="header">
                 <div className="header__left">
                     <a href="/">
-                    <img className="logo" src="./images/logofutshop.jpeg" alt="" /></a>
+                    <img className="logo" src="../images/logofutshop.jpeg" alt="" /></a>
                     <a href="/">
                         <h2 >FutShop</h2>
                     </a>
@@ -27,12 +27,12 @@ class Header extends Component {
                 </div>
                 <div className="header__center">
                     <ul className="header__lists">
-                        <button><a href="#" className="noUnderline">Home</a></button>
+                        <button><a href="/" className="noUnderline">Home</a></button>
                         <div className="header__centerMenu">
                             <button>Ligas</button>
                             <div className="dropDown__header">
-                                <a href="#">Liga Betclic</a>
-                                <a href="#">LaLiga</a>
+                                <a href="../Ligas/Betclic">Liga Betclic</a>
+                                <a href="../Ligas/Laliga">LaLiga</a>
                                 <a href="#">Premier League</a>
                                 <a href="#">Bundesliga</a>
                                 <a href="#">Ligue 1</a>
@@ -43,7 +43,7 @@ class Header extends Component {
                             <button>Retro</button>
                             <div className="dropDown__header">
                                 <a href="#">Seleções</a>
-                                <a href="#">Liga Betclic</a>
+                                <a href="/Ligas/Betclic">Liga Betclic</a>
                                 <a href="#">LaLiga</a>
                                 <a href="#">Premier League</a>
                                 <a href="#">Bundesliga</a>
@@ -61,7 +61,7 @@ class Header extends Component {
                                 <a href="#">Ásia</a>
                             </div>
                        </div>
-                        <button><a href="#" className="noUnderline">Desenvolvedores</a></button>
+                        <button><a href="/Desenvolvedores" className="noUnderline">Desenvolvedores</a></button>
                     </ul>
                 </div>
                 <div className="header__right">

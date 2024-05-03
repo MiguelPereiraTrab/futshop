@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Login.css';
+import '../css/Login.css';
 import Header from './Header';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
@@ -57,7 +57,7 @@ class Login extends Component {
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <a href="#">Esqueceste-te da Password</a>
-            <button id="botaoqueirrita" >Login</button>
+            <button type="button"id="botaoqueirrita" >Login</button>
           </form>
         </div>
         <div className="toggle-container">
