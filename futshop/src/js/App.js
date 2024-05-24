@@ -16,6 +16,12 @@ import PremierLeagueRetro from '../Retro/PremierLeagueRetro';
 import Ligue1Retro from '../Retro/Ligue1Retro';
 import SerieARetro from '../Retro/SerieARetro';
 import BundesligaRetro from '../Retro/BundesligaRetro';
+import Europa from '../Selecoes/Europa';
+import Africa from '../Selecoes/Africa';
+import AmericaSul from '../Selecoes/AmericaSul';
+import AmericaNorte from '../Selecoes/AmericaNorte';
+import Asia from '../Selecoes/Asia';
+import Desenvolvedores from './Desenvolvedores';
 
 class App extends Component {
   render() {
@@ -26,6 +32,7 @@ class App extends Component {
             <Route index element={<HomePage />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/HomePage" exact component={<HomePage />} />
+            <Route path="/Desenvolvedores" element={<Desenvolvedores />} />
             <Route path="/Ligas/Betclic" element={<Betclic />} />
             <Route path="/Ligas/Laliga" element={<Laliga />} />
             <Route path="/Ligas/Bundesliga" element={<Bundesliga />} />
@@ -39,6 +46,11 @@ class App extends Component {
             <Route path="/Retro/Ligue1Retro" element={<Ligue1Retro />} />
             <Route path="/Retro/PremierLeagueRetro" element={<PremierLeagueRetro />} />
             <Route path="/Retro/SerieARetro" element={<SerieARetro />} />
+            <Route path="/Selecoes/Europa" element={<Europa />} />
+            <Route path="/Selecoes/Africa" element={<Africa />} />
+            <Route path="/Selecoes/AmericaSul" element={<AmericaSul />} />
+            <Route path="/Selecoes/AmericaNorte" element={<AmericaNorte />} />
+            <Route path="/Selecoes/Asia" element={<Asia />} />
 
           </Routes>
         </Router>

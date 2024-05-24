@@ -54,14 +54,14 @@ class Header extends Component {
                         <div className="header__centerMenu">
                             <button>Seleções</button>
                             <div className="dropDown__header">
-                                <a href="#">Europa</a>
-                                <a href="#">África</a>
-                                <a href="#">América do Sul</a>
-                                <a href="#">América do Norte</a>
-                                <a href="#">Ásia</a>
+                                <a href="../Selecoes/Europa">Europa</a>
+                                <a href="../Selecoes/Africa">África</a>
+                                <a href="../Selecoes/AmericaSul">América do Sul</a>
+                                <a href="../Selecoes/AmericaNorte">América do Norte</a>
+                                <a href="../Selecoes/Asia">Ásia</a>
                             </div>
                        </div>
-                        <button><a href="/Desenvolvedores" className="noUnderline">Desenvolvedores</a></button>
+                        <button><a href="./Desenvolvedores" className="noUnderline">Desenvolvedores</a></button>
                     </ul>
                 </div>
                 <div className="header__right">
