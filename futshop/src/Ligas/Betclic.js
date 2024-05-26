@@ -7,14 +7,14 @@ import GoogleIcon from '@mui/icons-material/Google';
 class Betclic extends Component {
   render() {
     const imageList = [
-      { src: '../images/benfas.jpg', text: 'Benfica', link: 'link_para_benfica' },
-      { src: 'caminho_para_sua_imagem2.jpg', text: 'Porto', link: 'link_para_porto' },
-      { src: 'caminho_para_sua_imagem3.jpg', text: 'Sporting', link: 'link_para_sporting' },
-      { src: 'caminho_para_sua_imagem4.jpg', text: 'Braga', link: 'link_para_braga' },
-      { src: '../images/benfas.jpg', text: 'Benfica Secundária', link: 'link_para_benfica' },
-      { src: 'caminho_para_sua_imagem2.jpg', text: 'Porto Secundária ', link: 'link_para_porto' },
-      { src: 'caminho_para_sua_imagem3.jpg', text: 'Sporting Secundária', link: 'link_para_sporting' },
-      { src: 'caminho_para_sua_imagem4.jpg', text: 'Braga Secundária', link: 'link_para_braga' },
+      { src: '../images/benfas.jpg', text: 'Benfica', link: '../Selecoes/Africa' },
+      { src: 'caminho_para_sua_imagem2.jpg', text: 'Porto', link: 'porto1' },
+      { src: 'caminho_para_sua_imagem3.jpg', text: 'Sporting', link: 'sporting1' },
+      { src: 'caminho_para_sua_imagem4.jpg', text: 'Braga', link: 'braga1' },
+      { src: '../images/benfas.jpg', text: 'Benfica Secundária', link: 'benfica2' },
+      { src: 'caminho_para_sua_imagem2.jpg', text: 'Porto Secundária ', link: 'porto2' },
+      { src: 'caminho_para_sua_imagem3.jpg', text: 'Sporting Secundária', link: 'sporting3' },
+      { src: 'caminho_para_sua_imagem4.jpg', text: 'Braga Secundária', link: 'braga2' },
 
     ];
     

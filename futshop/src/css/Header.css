@@ -132,11 +132,68 @@
     align-items: center;
 }
 
-.header__right >button{
+.header__right > #Login{
     padding: 10px;
     margin: 0 10px;
 }
 a.noUnderline {
     text-decoration: none;
     color:black
+}
+ 
+#CarrinhoCompras {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin: 0 10px; /* Optional: adjust margin as needed */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#Perfil{
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin: 0 10px; /* Optional: adjust margin as needed */
+}
+
+.carrinho-dropdown {
+    position: absolute;
+    top: calc(100% + 10px); /* Posiciona o dropdown abaixo do botão do carrinho */
+    margin-left: -80px; /* Ajusta a posição horizontalmente */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Adiciona bordas redondas */
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Posiciona em relação ao documento inteiro */
+}
+
+.carrinho-dropdown::after {
+    content: '';
+    position: absolute;
+    top: -10px; /* Posiciona a ponta acima do dropdown */
+    left: 50%; /* Alinha a ponta com o centro horizontal do dropdown */
+    transform: translateX(-50%); /* Centraliza horizontalmente a ponta */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 10px 8px; /* Tamanho e forma da ponta */
+    border-color: transparent transparent white transparent; /* Cor da ponta */
+}
+
+div.carrinho-dropdown button#FinalizaCompra {
+    background-color: rgb(101, 20, 15);
+    margin-top:10px;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+div.carrinho-dropdown button#FinalizaCompra:hover {
+    background-color: rgb(121, 30, 25);
 }

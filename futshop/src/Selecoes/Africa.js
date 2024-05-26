@@ -1,52 +1,71 @@
 import React, { Component } from 'react';
-import Header from '../js/Header';
-import './Africa.css'; // Importando o arquivo CSS
-
+import Header from '../js/Header'; // Importe o componente Header
+import './Africa.css'; // Para estilização da página
 
 class Africa extends Component {
-  render() {
-    const imageList = [
-      { src: '../images/benfas.jpg', text: 'juven', link: 'link_para_benfica' },
-      { src: 'caminho_para_sua_imagem2.jpg', text: 'milan', link: 'link_para_porto' },
-      { src: 'caminho_para_sua_imagem3.jpg', text: 'juven', link: 'link_para_sporting' },
-      { src: 'caminho_para_sua_imagem4.jpg', text: 'juven', link: 'link_para_braga' },
-      { src: '../images/benfas.jpg', text: 'juven Secundária', link: 'link_para_benfica' },
-      { src: 'caminho_para_sua_imagem2.jpg', text: 'milan Secundária ', link: 'link_para_porto' },
-      { src: 'caminho_para_sua_imagem3.jpg', text: 'milan Secundária', link: 'link_para_sporting' },
-      { src: 'caminho_para_sua_imagem4.jpg', text: 'milan Secundária', link: 'link_para_braga' },
+  constructor(props) {
+    super(props);
+    this.state = {
+      size: '',
+      quantity: 1
+    };
+  }
 
-    ];
-    
+  handleSizeChange = (event) => {
+    this.setState({ size: event.target.value });
+  }
+
+  handleQuantityChange = (event) => {
+    this.setState({ quantity: event.target.value });
+  }
+
+  handleAddToCart = () => {
+    const { size, quantity } = this.state;
+    console.log(`Added ${quantity} t-shirt(s) of size ${size} to cart.`);
+    // Aqui você pode adicionar a lógica para adicionar o item ao carrinho
+  }
+
+  render() {
+    const { size, quantity } = this.state;
+
     return (
-      <div className="africa">
-        <Header />
-        <div className="linha1">
-          <div className="image-container">
-            {imageList.slice(0, 4).map((item, index) => (
-              <div key={index} className="image-list-item">
-                <a href={item.link}>
-                  <img src={item.src} alt={`Imagem ${index + 1}`} />
-                </a>
-                <p>{item.text}</p>
-              </div>
-            ))}
+      <div>
+        <Header /> {/* Adicione o componente Header aqui */}
+        <div className="product-page">
+          <div className="product-image">
+            <img src="../images/benfas.jpg" alt="T-shirt de futebol" />
           </div>
-        </div>
-        <div className="linha1">
-          <div className="image-container">
-            {imageList.slice(4, 8).map((item, index) => (
-              <div key={index} className="image-list-item">
-                <a href={item.link}>
-                  <img src={item.src} alt={`Imagem ${index + 4}`} />
-                </a>
-                <p>{item.text}</p>
-              </div>
-            ))}
+          <div className="product-details">
+            <h1>T-shirt de Futebol</h1>
+            <p>Descrição do produto vai aqui. É uma t-shirt de alta qualidade, perfeita para fãs de futebol.</p>
+            <div className="product-price">
+              <p>Preço: R$ 99,99</p>
+            </div>
+            <div className="product-options">
+              <label htmlFor="size">Tamanho:</label>
+              <select id="size" value={size} onChange={this.handleSizeChange}>
+                <option value="">Selecione o tamanho</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+            <div className="product-quantity">
+              <label htmlFor="quantity">Quantidade:</label>
+              <input
+                type="number"
+                id="quantity"
+                min="1"
+                value={quantity}
+                onChange={this.handleQuantityChange}
+              />
+            </div>
+            <button onClick={this.handleAddToCart}>Adicionar ao Carrinho</button>
           </div>
         </div>
       </div>
     );
-    
   }
 }
 

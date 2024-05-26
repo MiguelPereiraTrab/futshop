@@ -22,13 +22,15 @@ import AmericaSul from '../Selecoes/AmericaSul';
 import AmericaNorte from '../Selecoes/AmericaNorte';
 import Asia from '../Selecoes/Asia';
 import Desenvolvedores from './Desenvolvedores';
+import Perfil from './Perfil';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Router> 
-          <Routes>
+          <Routes>           
             <Route index element={<HomePage />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/HomePage" exact component={<HomePage />} />
@@ -51,7 +53,7 @@ class App extends Component {
             <Route path="/Selecoes/AmericaSul" element={<AmericaSul />} />
             <Route path="/Selecoes/AmericaNorte" element={<AmericaNorte />} />
             <Route path="/Selecoes/Asia" element={<Asia />} />
-
+            <Route path="/Perfil" element={<Perfil />}/>
           </Routes>
         </Router>
       </div>
