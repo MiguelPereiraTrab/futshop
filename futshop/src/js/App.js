@@ -23,6 +23,7 @@ import AmericaNorte from '../Selecoes/AmericaNorte';
 import Asia from '../Selecoes/Asia';
 import Desenvolvedores from './Desenvolvedores';
 import Perfil from './Perfil';
+import Admin from './Admin';
 
 
 class App extends Component {
@@ -54,6 +55,7 @@ class App extends Component {
             <Route path="/Selecoes/AmericaNorte" element={<AmericaNorte />} />
             <Route path="/Selecoes/Asia" element={<Asia />} />
             <Route path="/Perfil" element={<Perfil />}/>
+            <Route path="/Admin" element={<Admin />}/>
           </Routes>
         </Router>
       </div>

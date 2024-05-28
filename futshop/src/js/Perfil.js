@@ -62,8 +62,10 @@ const Perfil = () => {
         </div>
       </div>
       <button className="save-button" onClick={handleSaveChanges}>
-        <FontAwesomeIcon icon={faSave} /> Guardar Alterações
-      </button>
+        <FontAwesomeIcon icon={faSave} /> Guardar Alterações</button>
+
+        <button className="Logout" onClick={handleSaveChanges}> Log out</button>
+
     </div>
   );
 };
