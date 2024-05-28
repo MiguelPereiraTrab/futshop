@@ -1,25 +1,17 @@
-.carousel-button {
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(21, 21, 21);
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-  }
-  
-  .best-sellers {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .carousel-container-feedback {
-    margin-top: 60px;
-  }
-  
-  .carousel-container img {
-    width: 100%;
-    height: calc(100vh - 120px);
-    object-fit: cover;
-  }
+.carousel-container{
+    margin-top: 250px;
+}
+
+.carousel-container h3{
+   font-size: 24px;
+}
+
+.carousel-button{
+    background-color: rgb(101, 20, 15);
+    border-radius: 10px;
+    color:white;
+}
+
+.carousel-button:hover{
+    background-color: rgb(200, 115, 111);
+}

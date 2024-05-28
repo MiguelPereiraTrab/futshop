@@ -24,6 +24,7 @@ import Asia from '../Selecoes/Asia';
 import Desenvolvedores from './Desenvolvedores';
 import Perfil from './Perfil';
 import Admin from './Admin';
+import Compra from './Compra';
 
 
 class App extends Component {
@@ -34,7 +35,6 @@ class App extends Component {
           <Routes>           
             <Route index element={<HomePage />} />
             <Route path="/Login" element={<Login />} />
-            <Route path="/HomePage" exact component={<HomePage />} />
             <Route path="/Desenvolvedores" element={<Desenvolvedores />} />
             <Route path="/Ligas/Betclic" element={<Betclic />} />
             <Route path="/Ligas/Laliga" element={<Laliga />} />
@@ -56,6 +56,7 @@ class App extends Component {
             <Route path="/Selecoes/Asia" element={<Asia />} />
             <Route path="/Perfil" element={<Perfil />}/>
             <Route path="/Admin" element={<Admin />}/>
+            <Route path="/Compra" element={<Compra />}/>
           </Routes>
         </Router>
       </div>

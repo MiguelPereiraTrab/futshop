@@ -27,31 +27,31 @@ function HomePage() {
       <div className='carousel-container'>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item>
-            <img src='../images/fcp.jpg' alt="Imagem 1" />
+            <img src='../images/merdaa.jpg' alt="Imagem 1" preload="auto" />
             <Carousel.Caption>
               <h3>Liga Betclic</h3>
               <button className="carousel-button" onClick={() => handleButtonClick('../Ligas/Betclic')}>Comprar</button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src='../images/Portugal_Festa1_210324_1280-1024x576.jpg' alt="Imagem 2" />
+            <img src='../images/merdaa.jpg' alt="Imagem 2" preload="auto" />
             <Carousel.Caption>
               <h3>Portugal</h3>
-              <button className="carousel-button" onClick={() => handleButtonClick('../Ligas/Betclic')}>Comprar</button>
+              <button className="carousel-button" onClick={() => handleButtonClick('../Selecoes/Europa')}>Comprar</button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src='../images/naom_65ff500a5ee74.jpg' alt="Imagem 3" />
+            <img src='../images/merdaa.jpg' alt="Imagem 3" preload="auto" />
             <Carousel.Caption>
               <h3>Euro 2024</h3>
               <button className="carousel-button" onClick={() => handleButtonClick('../Ligas/Betclic')}>Comprar</button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src='../images/cristiano-ronaldo-man-united-return.jpg' alt="Imagem 4" />
+            <img src='../images/merdaa.jpg' alt="Imagem 4" preload="auto" />
             <Carousel.Caption>
               <h3>Retro</h3>
-              <button className="carousel-button" onClick={() => handleButtonClick('../Ligas/Betclic')}>Comprar</button>
+              <button className="carousel-button" onClick={() => handleButtonClick('../Retro/Selecoes')}>Comprar</button>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

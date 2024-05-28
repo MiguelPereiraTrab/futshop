@@ -79,3 +79,18 @@
     background-color: rgb(86, 17, 13); /* Cor um pouco mais escura no hover */
   }
   
+  .logout{
+    background-color: rgb(101, 20, 15); /* Cor RGB */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px
+  }
+
+  .logout:hover{
+    background-color: rgb(86, 17, 13);
+  }

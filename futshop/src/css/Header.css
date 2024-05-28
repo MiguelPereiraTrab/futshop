@@ -33,6 +33,7 @@
 }
 
 .header__center{
+    margin-top:12px;
     display: flex;
     justify-content: center;
     align-items: center;

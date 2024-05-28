@@ -13,18 +13,19 @@ class Header extends React.Component {
         };
     }
     handleButtonClick = (e) => {
-        const buttonId = e.target.id;
+        const buttonId = e.currentTarget.id;
         if (buttonId === 'Registar') {
             window.location.href = '/Registar';
         } else if (buttonId === 'Login') {
             window.location.href = '/Login';
         }   else if (buttonId === 'Perfil'){
-            window.location.href = 'Perfil';
+            window.location.href = '/Perfil';
         } else if (buttonId === 'CarrinhoCompras') {
-               // Inverte o estado do carrinho ao clicar no ícone do carrinho
                this.setState(prevState => ({
                 isCartOpen: !prevState.isCartOpen
             }));
+        } else if (buttonId === 'FinalizaCompra'){
+            window.location.href = '/Compra';
         }
        
     };
@@ -83,27 +84,27 @@ class Header extends React.Component {
                 </div>
                 <div className="header__right">
                     {isUserLoggedIn ? (
-                         <button id="Login" onClick={this.handleButtonClick}>Login</button>
+                      <button id="Login" onClick={this.handleButtonClick}>Login</button>
                     ) : (
                         <div>
-                        <button id="CarrinhoCompras" onClick={this.handleButtonClick}>
-                            <FaShoppingCart size={25} onClick={()=> this.handleButtonClick({target:{id: 'CarrinhoCompras'}})}/>
-                        </button>
-                        {this.state.isCartOpen && (
-                            <div className="carrinho-dropdown">
-                                <p>Conteúdo do carrinho...</p>
-                                <p>Conteúdo do carrinho...</p>
-                                <p>Conteúdo do carrinho...</p>
-                                <p>Conteúdo do carrinho...</p>
-                                <p>Conteúdo do carrinho...</p>
-                                <button id="FinalizaCompra">Finalizar Compra</button>
-
-                            </div>
-                        )}
-                        <button id="Perfil" onClick={this.handleButtonClick}>
-                        <FaUser size={25} onClick={() => this.handleButtonClick({target: {id: 'Perfil'}})} />
-                        </button>
+                            <button id="CarrinhoCompras" onClick={this.handleButtonClick}>
+                                <FaShoppingCart size={25} />
+                            </button>
+                            {this.state.isCartOpen && (
+                                <div className="carrinho-dropdown">
+                                    <p>Conteúdo do carrinho...</p>
+                                    <p>Conteúdo do carrinho...</p>
+                                    <p>Conteúdo do carrinho...</p>
+                                    <p>Conteúdo do carrinho...</p>
+                                    <p>Conteúdo do carrinho...</p>
+                                    <button id="FinalizaCompra" onClick={this.handleButtonClick}>Finalizar Compra</button>
+                                </div>
+                            )}
+                            <button id="Perfil" onClick={this.handleButtonClick}>
+                                <FaUser size={25} />
+                            </button>
                         </div>
+
                     )}
                 </div>
             </div>

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash, faSave } from '@fortawesome/free-solid-svg-icons'; // Importe o ícone de salvar
-import '../css/Perfil.css';
+import { faEye, faEyeSlash, faSave } from '@fortawesome/free-solid-svg-icons'; 
+import '../css/Compra.css';
 
-const Perfil = () => {
+const Compra = () => {
   const [user, setUser] = useState({
     name: '',
     address: '',
@@ -15,21 +15,10 @@ const Perfil = () => {
     photo: ''
   });
   const [showPassword, setShowPassword] = useState(false);
-  const Logout = document.getElementById('Logout');
-
- 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
-  };
-
-  const handleButtonClick = (e) => {
-    const buttonId = e.currentTarget.id;
-    if (buttonId === 'logout') {
-      window.location.href = '/';
-      localStorage.setItem('isUserLoggedIn', 'false');
-    }
   };
 
   const handleSaveChanges = () => {
@@ -75,9 +64,10 @@ const Perfil = () => {
       <button className="save-button" onClick={handleSaveChanges}>
         <FontAwesomeIcon icon={faSave} /> Guardar Alterações</button>
 
-      <button className="logout" id="logout" onClick={handleButtonClick}> Log out</button>
+        <button className="Logout" onClick={handleSaveChanges}> Log out</button>
+
     </div>
   );
 };
 
-export default Perfil;
+export default Compra;

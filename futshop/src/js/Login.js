@@ -29,7 +29,7 @@ class Login extends Component {
 
     render() {
         return (
-            <div id="merda">
+            <div>
                 <Header />
                 <div className="container" id="container">
                     <div className="form-container sign-up">
