@@ -44,7 +44,7 @@ class Africa extends Component {
             <div className="product-options">
               <label htmlFor="size">Tamanho:</label>
               <select id="size" value={size} onChange={this.handleSizeChange}>
-                <option value="">Selecione o tamanho</option>
+                <option value="">Selecionar</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>

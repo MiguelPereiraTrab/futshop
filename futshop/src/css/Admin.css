@@ -29,5 +29,62 @@
 
 .admin-content {
     margin-top: 160px; /* Ajuste conforme necessário para espaçamento abaixo dos botões */
-    /* Adicione aqui estilos adicionais para o conteúdo do administrador */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos específicos para a lista de utilizadores */
+.lista-utilizadores {
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-utilizadores ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-utilizadores li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.lista-utilizadores li:last-child {
+    border-bottom: none;
+}
+
+.lista-utilizadores li:hover {
+    background-color: #f1f1f1;
+}
+
+
+.lista-produtos {
+    margin: 20px auto;
+    padding: 20px;
+   width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-produtos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-produtos li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.lista-produtos li:last-child {
+    border-bottom: none;
+}
+
+.lista-produtos li:hover {
+    background-color: #f1f1f1;
 }

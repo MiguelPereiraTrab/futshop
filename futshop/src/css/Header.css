@@ -30,6 +30,8 @@
 .header__left >a >h2{
     font-size: 20px;
     color: rgb(21, 21, 21);
+    font-weight:bold;
+    margin-top: 10px;
 }
 
 .header__center{
@@ -54,6 +56,7 @@
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; 
     text-decoration: none;
+    border:2px solid black;
   
 }
 .header__lists >button >a:hover{
@@ -70,10 +73,7 @@
     height: 100%;
     margin-left: 5px;
     margin-right: 5px;
-
 }
-
-
 
 .header__centerMenu >button{
     padding: 10px 20px;
@@ -83,11 +83,11 @@
     color: rgb(21, 21, 21);
     cursor: pointer; 
     transition: background-color 0.3s, color 0.3s;
+    border:2px solid black;
 
 }
 
 .dropDown__header{
-
     border-radius: 10px;
     display: none;
     position: absolute;
@@ -105,6 +105,7 @@
 .header__centerMenu >button:hover {
     background-color: rgb(101, 20, 15); 
     color: white; 
+    border: 2px solid black;
 }
 
 
@@ -121,6 +122,7 @@
 .dropDown__header >a:hover{
     border-radius: 10px;
     background-color: rgb(101, 20, 15);
+    color:white;
 }
 .header__centerMenu:hover >.dropDown__header{
     display: block;
@@ -136,6 +138,9 @@
 .header__right > #Login{
     padding: 10px;
     margin: 0 10px;
+    background-color: white;
+    color:black;
+    border-color: black;
 }
 a.noUnderline {
     text-decoration: none;
@@ -148,6 +153,7 @@ a.noUnderline {
     padding: 0; /* Remove padding */
     margin: 0 10px; /* Optional: adjust margin as needed */
     cursor: pointer; /* Change cursor to pointer */
+    color:black;
 }
 
 #Perfil{
@@ -155,6 +161,7 @@ a.noUnderline {
     border: none; /* Remove border */
     padding: 0; /* Remove padding */
     margin: 0 10px; /* Optional: adjust margin as needed */
+    color:black;
 }
 
 .carrinho-dropdown {
@@ -184,7 +191,7 @@ a.noUnderline {
 }
 
 div.carrinho-dropdown button#FinalizaCompra {
-    background-color: rgb(101, 20, 15);
+    background-color: (101, 20, 15);
     margin-top:10px;
     color: white;
     border: none;

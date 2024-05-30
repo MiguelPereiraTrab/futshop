@@ -1,0 +1,58 @@
+.compra-container {
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top:370px;
+    margin-bottom:10px;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  .user-info, .order-summary, .payment-info {
+    margin-bottom: 20px;
+  }
+  
+  .user-info-item, .order-item, .payment-info-item {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .order-item, .order-total {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .finalize-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(101, 20, 15);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .finalize-button:hover {
+    background-color: rgb(86, 17, 13);
+  }
+  
