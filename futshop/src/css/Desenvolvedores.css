@@ -1,3 +1,54 @@
-.h2{
-    margin-top: 100px;
+.content {
+
+    background-size: 20%;
+    background-position: center;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 10px;
+    text-align: center;
+    transform: translateY(-5%);
+    width: 45%;
+}
+.content-wrapper {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around; /* Alinha os conteúdos lado a lado */
+    flex: 1;
+    padding: 20px;
+}
+.foto {
+        max-width: 200px; /* Define a largura máxima da imagem */
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0;
+    
+    
+}
+
+.button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.content h2 {
+    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+}
+
+.content h3 {
+    font-size: 16px; /* Ajuste o tamanho conforme necessário */
 }
