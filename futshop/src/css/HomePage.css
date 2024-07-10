@@ -1,17 +1,49 @@
-.carousel-container{
-    margin-top: 330px;
+.carousel-container {
+    margin-top: 100px;
+    border-radius: 10px;
 }
 
-.carousel-container h3{
-   font-size: 24px;
+.carousel-container h3 {
+    font-size: 24px;
 }
 
-.carousel-button{
+.carousel-button {
     background-color: rgb(101, 20, 15);
     border-radius: 10px;
-    color:white;
+    color: white;
 }
 
-.carousel-button:hover{
-    background-color: rgb(200, 115, 111);
+.carousel-button:hover {
+    background-color: rgb(101, 20, 15, 0.85);
+}
+
+.full-screen {
+    margin-bottom: 200px;
+}
+
+.carousel img {
+    border-radius: 15px;
+}
+.carousel img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem deformação */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+}
+
+.section h1 {
+    color: white;
+}
+
+.section button {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(101, 20, 15);
 }
