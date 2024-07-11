@@ -56,9 +56,6 @@ class Login extends Component {
               // Handle any errors
               console.error(error);
             });
-
-
-
     };
 
     componentDidMount() {

@@ -7,6 +7,55 @@ class Login2 extends Component {
     window.location.href = "/Registar";
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      loginEmail: '',
+      loginPassword: '',
+    };
+  }
+
+  handleInputChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+
+  handleLogin = async () => {
+    const { loginEmail, loginPassword } = this.state;
+    const data = {
+      Email: loginEmail,
+      Password: loginPassword
+    };
+
+    try {
+      const response = await fetch('https://localhost:7090/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.status === 200) {
+        const result = await response.text();
+        if (result === "ok") {
+          window.location.href = "/";
+          localStorage.setItem('isUserLoggedIn', 'true');
+        } else {
+          alert("Login failed: " + result);
+        }
+      } else {
+        const errorText = await response.text();
+        console.error('Login error: ', errorText);
+        alert('Login failed: ' + errorText);
+      }
+    } catch (error) {
+      console.error('Network error: ', error);
+      alert('Network error occurred');
+    }
+  };
+
   render() {
     return (
       <div className="login-page">
@@ -16,14 +65,14 @@ class Login2 extends Component {
           <form>
             <div className="login-input-group">
               <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="text" id="login-email" name="loginEmail" value={this.state.loginEmail} onChange={this.handleInputChange} required />
             </div>
             <div className="login-input-group">
               <label htmlFor="password">Senha:</label>
-              <input type="password" id="password" name="password" required />
+              <input type="password" id="login-password" name="loginPassword" value={this.state.loginPassword} onChange={this.handleInputChange} required />
             </div>
             <div className="login-button-group">
-              <button type="button">Login</button>
+              <button type="button" onClick={this.handleLogin}>Login</button>
               <button type="button" onClick={this.handleRegister}>Criar Conta</button>
             </div>
           </form>
