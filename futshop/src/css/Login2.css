@@ -1,0 +1,65 @@
+/* Remova o estilo global do body */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px; /* Aumentado para 30px */
+  border-radius: 10px; /* Aumentado para 10px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Aumentado para 350px */
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.login-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; /* Arredondado para 20px */
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button-group button:hover {
+  background-color: #0056b3;
+}
+
+.login-button-group button:last-child {
+  background-color: #28a745;
+}
+
+.login-button-group button:last-child:hover {
+  background-color: #218838;
+}

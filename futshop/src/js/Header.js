@@ -16,7 +16,7 @@ class Header extends React.Component {
         if (buttonId === "Registar") {
             window.location.href = "/Registar";
         } else if (buttonId === "Login") {
-            window.location.href = "/Login";
+            window.location.href = "/Login2";
         } else if (buttonId === "Perfil") {
             window.location.href = "/Perfil";
         } else if (buttonId === "CarrinhoCompras") {

@@ -2,6 +2,7 @@ import "../css/App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
 import Login from "./Login";
+import Login2 from "./Login2";
 import HomePage from "../homePage/HomePage";
 import Selecoes from "../Retro/Selecoes";
 import BetclicRetro from "../Retro/BetclicRetro";
@@ -21,6 +22,7 @@ import Admin from "./Admin";
 import Compra from "./Compra";
 import Ligas from "../Ligas/Ligas";
 import LigasHomePage from "../Ligas/LigasHomePage";
+import Registar from "./Registar";
 import {
     imageListBetclic,
     imageListBundesliga,
@@ -61,6 +63,8 @@ class App extends Component {
                         <Route path="/Perfil" element={<Perfil />} />
                         <Route path="/Admin" element={<Admin />} />
                         <Route path="/Compra" element={<Compra />} />
+                        <Route path="/Login2" element={<Login2 />} />
+                        <Route path="/Registar" element={<Registar />} />
                     </Routes>
                 </Router>
             </div>

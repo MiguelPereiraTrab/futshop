@@ -1,0 +1,72 @@
+/* Remova o estilo global do body */
+.registar-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.main-content {
+  margin-top: 20px; /* Espaço abaixo do header */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.registar-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  margin-top: 50px; /* Ajuste a margem superior para mover o contêiner para baixo */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.registar-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.registar-input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.registar-input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registar-button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registar-button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registar-button-group button:hover {
+  background-color: #0056b3;
+}
+
+.registar-button-group button:last-child {
+  background-color: #28a745;
+}
+
+.registar-button-group button:last-child:hover {
+  background-color: #218838;
+}
