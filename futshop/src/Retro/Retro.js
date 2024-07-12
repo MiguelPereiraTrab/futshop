@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Header from "../js/Header";
-import "./Ligas.css";
+import "./Retro.css";
 
-class Ligas extends Component {
+class Retro extends Component {
     render() {
         const { imageList } = this.props; // Recebe a lista de imagens via props
 
@@ -22,11 +22,10 @@ class Ligas extends Component {
                             ))}
                         </div>
                     </div>
-                    
                 </div>
             </div>
         );
     }
 }
 
-export default Ligas;
+export default Retro;

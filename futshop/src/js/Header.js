@@ -54,16 +54,9 @@ class Header extends React.Component {
                             </a>
                         </div>
                         <div className="header__centerMenu">
-                            <button>Retro</button>
-                            <div className="dropDown__header">
-                                <a href="../Retro/Selecoes">Seleções</a>
-                                <a href="../Retro/BetclicRetro">Liga Betclic</a>
-                                <a href="../Retro/LaligaRetro">LaLiga</a>
-                                <a href="../Retro/PremierLeagueRetro">Premier League</a>
-                                <a href="../Retro/BundesligaRetro">Bundesliga</a>
-                                <a href="../Retro/Ligue1Retro">Ligue 1</a>
-                                <a href="../Retro/SerieARetro">Serie A</a>
-                            </div>
+                        <a href="/Retro" className="noUnderline">
+                                Retro
+                            </a>
                         </div>
                         <div className="header__centerMenu">
                             <button>Seleções</button>

@@ -1,15 +1,15 @@
 import React from "react";
 import Header from "../js/Header";
-import "./Ligas.css";
+import "./Retro.css";
 
 const ligasLista = [
-    { name: "Liga Betclic",  imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png",   link: "../Ligas/Betclic" },
-    { name: "LaLiga", imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png", link: "../Ligas/Laliga" },
-    { name: "Premier League", imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png", link: "../Ligas/PremierLeague" },
+    { name: "Liga Betclic Retro",  imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png",   link: "../Ligas/Betclic" },
+    { name: "LaLiga Retro", imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png", link: "../Ligas/Laliga" },
+    { name: "Premier League Retro", imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png", link: "../Ligas/PremierLeague" },
 
 ];
 
-const LigasHomePage = () => {
+const RetroHomePage = () => {
     return (
         <>
             <Header></Header>
@@ -34,4 +34,4 @@ const LigasHomePage = () => {
     );
 };
 
-export default LigasHomePage;
+export default RetroHomePage;
