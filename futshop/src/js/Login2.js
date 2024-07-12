@@ -38,13 +38,11 @@ class Login2 extends Component {
       });
 
       if (response.status === 200) {
-        const result = await response.text();
-        if (result === "ok") {
+        const result = await response.text(); 
           window.location.href = "/";
           localStorage.setItem('isUserLoggedIn', 'true');
-        } else {
-          alert("Login failed: " + result);
-        }
+          localStorage.setItem('userId' , result);
+
       } else {
         const errorText = await response.text();
         console.error('Login error: ', errorText);
