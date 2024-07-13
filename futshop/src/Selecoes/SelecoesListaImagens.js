@@ -1,5 +1,5 @@
 export const imageListBetclic = [
-    { src: "../images/benfas.jpg", text: "Benfica", link: "../Artigo" },
+    { src: "../images/benfas.jpg", text: "Benfica", link: "../Selecoes/Africa" },
     { src: "../images/benfas.jpg", text: "Porto", link: "porto1" },
     { src: "../images/benfas.jpg", text: "Sporting", link: "sporting1" },
     { src: "../images/benfas.jpg", text: "Braga", link: "braga1" },

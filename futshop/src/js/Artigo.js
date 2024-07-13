@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../js/Header'; // Importe o componente Header
-import './Africa.css'; // Para estilização da página
+import Header from './Header'; // Importe o componente Header
+import '../css/Artigo.css'; // Para estilização da página
 
-class Africa extends Component {
+class Artigo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,8 +29,8 @@ class Africa extends Component {
     const { size, quantity } = this.state;
 
     return (
-      <div>
-        <Header /> {/* Adicione o componente Header aqui */}
+      <div className="container-principal">
+        <Header /> 
         <div className="product-page">
           <div className="product-image">
             <img src="../images/benfas.jpg" alt="T-shirt de futebol" />
@@ -69,4 +69,4 @@ class Africa extends Component {
   }
 }
 
-export default Africa;
+export default Artigo;

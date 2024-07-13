@@ -105,7 +105,7 @@ handleRegister = async () => {
                 <input type="text" id="register-telemovel" name="registerTelemovel" value={this.state.registerTelemovel} onChange={(evt) => this.handleInputChange(evt)} required />
               </div>
               <div className="registar-button-group">
-                <button type="submit" onClick={this.handleRegister}>Registrar</button>
+                <button type="submit" onClick={this.handleRegister}>Criar Conta</button>
               </div>
           </div>
         </div>

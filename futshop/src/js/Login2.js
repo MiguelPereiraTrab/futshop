@@ -45,8 +45,9 @@ class Login2 extends Component {
 
       } else {
         const errorText = await response.text();
+        const errorJson = await response.json();
         console.error('Login error: ', errorText);
-        alert('Login failed: ' + errorText);
+        alert('Login failed: ' + JSON.stringify(errorJson));
       }
     } catch (error) {
       console.error('Network error: ', error);

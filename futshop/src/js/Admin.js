@@ -23,9 +23,7 @@ class Admin extends Component {
                 showProdutos: !prevState.showProdutos,
                 showUtilizadores: false,
             }));
-        } else if (buttonId === 'Inicio') {
-            // Lógica para o botão Início
-        }
+        } 
     };
 
     render() {
@@ -33,7 +31,6 @@ class Admin extends Component {
             <div>
                 <Header />
                 <div className="botoes-admin">
-                    <button id="Inicio" onClick={this.handleButtonClick} className="admin-button">Início</button>
                     <button id="Utilizadores" onClick={this.handleButtonClick} className="admin-button">Utilizadores</button>
                     <button id="Produtos" onClick={this.handleButtonClick} className="admin-button">Produtos</button>
                 </div>

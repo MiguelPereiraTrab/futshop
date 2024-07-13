@@ -11,6 +11,7 @@ class Header extends React.Component {
             isCartOpen: false, // Estado para controlar se o carrinho está aberto ou fechado
         };
     }
+
     handleButtonClick = (e) => {
         const buttonId = e.currentTarget.id;
         if (buttonId === "Registar") {
@@ -54,33 +55,33 @@ class Header extends React.Component {
                             </a>
                         </div>
                         <div className="header__centerMenu">
-                        <a href="/Retro" className="noUnderline">
+                            <a href="/Retro" className="noUnderline">
                                 Retro
                             </a>
                         </div>
                         <div className="header__centerMenu">
-                            <button>Seleções</button>
-                            <div className="dropDown__header">
-                                <a href="../Selecoes/Europa">Europa</a>
-                                <a href="../Selecoes/Africa">África</a>
-                                <a href="../Selecoes/AmericaSul">América do Sul</a>
-                                <a href="../Selecoes/AmericaNorte">América do Norte</a>
-                                <a href="../Selecoes/Asia">Ásia</a>
-                            </div>
+                            <a href="/Selecoes" className="noUnderline">
+                                Selecoes
+                            </a>
                         </div>
                         <button>
                             <a href="../Desenvolvedores" className="noUnderline">
                                 Desenvolvedores
                             </a>
                         </button>
+                        <button>
+                            <a href="../Admin" className="noUnderline">Admin</a>
+                        </button>
                     </ul>
                 </div>
                 <div className="header__right">
-                    {isUserLoggedIn ? (
+                    {isUserLoggedIn ? (  
+                        
+                    
                         <button id="Login" onClick={this.handleButtonClick}>
                             <FaUser size={25} /> Login
                         </button>
-                    ) : (
+                        ) : (
                         <div>
                             <button id="CarrinhoCompras" onClick={this.handleButtonClick}>
                                 <FaShoppingCart size={25} />
@@ -100,7 +101,7 @@ class Header extends React.Component {
                             <button id="Perfil" onClick={this.handleButtonClick}>
                                 <FaUser size={25} />
                             </button>
-                        </div>
+                        </div>       
                     )}
                 </div>
             </div>
