@@ -14,19 +14,18 @@ class Admin extends Component {
     handleButtonClick = (e) => {
         const buttonId = e.target.id;
         if (buttonId === 'Utilizadores') {
-            this.setState((prevState) => ({
-                showUtilizadores: !prevState.showUtilizadores,
-                showProdutos: false,
-            }));
+            window.location.href = "./UsersAdmin";
         } else if (buttonId === 'Produtos') {
             this.setState((prevState) => ({
                 showProdutos: !prevState.showProdutos,
                 showUtilizadores: false,
             }));
-        } else if (buttonId === 'adicionar') { // Corrigido para 'adicionar'
+        } else if (buttonId === 'adicionar') {
             window.location.href = "./Adicionar";
         }
-    };
+        else if (buttonId === 'listaartigos') {
+            window.location.href = "./ArtigosAdmin";}
+    }
 
     render() {
         return (
@@ -34,31 +33,10 @@ class Admin extends Component {
                 <Header />
                 <div className="botoes-admin">
                     <button id="Utilizadores" onClick={this.handleButtonClick} className="admin-button">Utilizadores</button>
-                    <button id="Produtos" onClick={this.handleButtonClick} className="admin-button">Produtos</button>
+                    <button className="admin-button" id="listaartigos" onClick={this.handleButtonClick}>Lista Artigos</button>
+                    <button className="admin-button" id="adicionar" onClick={this.handleButtonClick}>Adicionar Artigos</button>
                 </div>
-                <div className="admin-content">
-                    {this.state.showUtilizadores && (
-                        <div id="lista-utilizadores" className="lista-utilizadores">
-                            <ul>
-                                <li>Utilizador 1</li>
-                                <li>Utilizador 2</li>
-                                <li>Utilizador 3</li>
-                            </ul>
-                        </div>
-                    )}
-                    {this.state.showProdutos && (
-                        <div id="lista-produtos" className="lista-produtos">
-                            <ul>
-                                <li>Produto 1</li>
-                                <li>Produto 2</li>
-                                <li>Produto 3</li>
-                            </ul>
-
-                            {/* Corrigido para chamar this.handleButtonClick */}
-                            <button className="admin-button" id="adicionar" onClick={this.handleButtonClick}>Adicionar</button>
-                        </div>
-                    )}
-                </div>
+             
             </div>
         );
     }

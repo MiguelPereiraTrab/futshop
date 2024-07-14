@@ -1,0 +1,51 @@
+/* ArtigosAdmin.css */
+
+/* Estilização do container da lista */
+.lista-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Estilização da tabela */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  background-color: white; /* Fundo branco para toda a tabela */
+}
+
+/* Estilização das células da tabela */
+.users-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  color: black; /* Texto preto */
+}
+
+/* Estilização da primeira célula */
+.users-table td:first-child {
+  background-color: #f2f2f2; /* Defina a cor desejada para a primeira célula */
+}
+
+/* Estilização das células do cabeçalho da tabela */
+.users-table th {
+  background-color: #f2f2f2; /* Fundo cinza claro para os cabeçalhos */
+  color: black; /* Texto preto */
+  font-weight: bold;
+}
+
+/* Estilização das linhas */
+.users-table tr {
+  color: black; /* Texto preto */
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+/* Estilização do título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}

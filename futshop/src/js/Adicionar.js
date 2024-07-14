@@ -11,7 +11,6 @@ class Adicionar extends Component {
       artigoTamanho: '',
       artigoQuantidade: 0,
       artigoPreco: 0,
-      artigoImagemURL: '',
       artigoCategoriaFK: '',
       error: ''
     };
@@ -23,42 +22,20 @@ class Adicionar extends Component {
     });
   };
 
-  handleImageChange = async (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      try {
-        const imageDataUrl = await this.toBase64(file);
-        this.setState({ artigoImagemURL: imageDataUrl });
-      } catch (error) {
-        console.error('Erro ao processar a imagem:', error);
-      }
-    }
-  };
-  
-  toBase64 = async (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        resolve(reader.result);
-      };
-      reader.readAsDataURL(file);
-    });
-  };
-
   handleSubmit = async (event) => {
     event.preventDefault();
-
-    const { artigoNome, artigoDescricao, artigoTamanho, artigoQuantidade, artigoPreco, artigoImagemURL, artigoCategoriaFK } = this.state;
+  
+    const { artigoNome, artigoDescricao, artigoTamanho, artigoQuantidade, artigoPreco, artigoCategoriaFK } = this.state;
+  
     const data = {
       Nome: artigoNome,
       Descricao: artigoDescricao,
       Tamanho: artigoTamanho,
-      Quantidade: artigoQuantidade,
-      Preco: artigoPreco,
-      ImagemURL: artigoImagemURL,
-      CategoriaFK: parseInt(artigoCategoriaFK), // Certifique-se de que CategoriaFK é um número inteiro
+      Quantidade: parseInt(artigoQuantidade), // Converte para número inteiro
+      Preco: parseFloat(artigoPreco), // Converte para número de ponto flutuante
+      CategoriaFK: parseInt(artigoCategoriaFK) // Converte para número inteiro
     };
-
+  
     try {
       const response = await fetch('https://localhost:7090/api/artigo', {
         method: 'POST',
@@ -67,16 +44,18 @@ class Adicionar extends Component {
         },
         body: JSON.stringify(data)
       });
-
-      if (response.status === 200) {
-        window.location.href = "/Artigo";
+  
+      if (response.ok) {
+        window.location.href = "/Adicionar";
       } else {
         const errorData = await response.json();
         this.setState({ error: errorData.error });
       }
     } catch (error) {
       console.error('Erro ao enviar formulário:', error);
-      this.setState({ error: 'Ocorreu um erro ao registrar o artigo. Por favor, tente novamente mais tarde.' });
+      this.setState({
+        error: 'Ocorreu um erro ao registrar o artigo. Por favor, tente novamente mais tarde.'
+      });
     }
   };
 
@@ -127,11 +106,6 @@ class Adicionar extends Component {
                 <option value="8">América</option>
                 <option value="9">África</option>
               </select>
-            </div>
-            <div className="form-group">
-              <label>Imagem:</label>
-              <input type="file" accept="image/*" onChange={this.handleImageChange} required />
-              {this.state.artigoImagemURL && <img src={this.state.artigoImagemURL} alt="Preview da imagem" style={{ maxWidth: '200px', marginTop: '10px' }} />}
             </div>
             {this.state.error && <p className="error">{this.state.error}</p>}
             <button type="submit" className="adicionar">Adicionar T-shirt</button>

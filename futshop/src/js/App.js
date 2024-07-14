@@ -17,6 +17,10 @@ import Selecoes from "../Selecoes/Selecoes";
 import SelecoesHomePage from "../Selecoes/SelecoesHomePage";
 import Adicionar from "./Adicionar";
 import Carrinho from "./Carrinho";
+import UsersAdmin from "./UsersAdmin";
+import ArtigosAdmin from "./ArtigosAdmin";
+
+
 import {
     imageListBetclic,
     imageListLaliga,
@@ -39,6 +43,11 @@ class App extends Component {
                         <Route path="/Artigo" element={<Artigo />} />
                         <Route path="/Adicionar" element={<Adicionar />} />
                         <Route path="/Carrinho" element={<Carrinho />} />
+                        <Route path="/UsersAdmin" element={<UsersAdmin />} />
+                       
+                       
+                       
+                        <Route path="/ArtigosAdmin" element={<ArtigosAdmin />} />
 
 
                         <Route path="/Ligas" element={<LigasHomePage />} />

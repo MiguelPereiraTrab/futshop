@@ -7,6 +7,9 @@ class Carrinho extends Component {
         return (
             <div>
                 <Header />
+                <div className="lista-container">
+                    {/* A lista será adicionada aqui posteriormente */}
+                </div>
             </div>
         );
     }
