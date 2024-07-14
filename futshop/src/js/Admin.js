@@ -23,7 +23,9 @@ class Admin extends Component {
                 showProdutos: !prevState.showProdutos,
                 showUtilizadores: false,
             }));
-        } 
+        } else if (buttonId === 'adicionar') { // Corrigido para 'adicionar'
+            window.location.href = "./Adicionar";
+        }
     };
 
     render() {
@@ -51,6 +53,9 @@ class Admin extends Component {
                                 <li>Produto 2</li>
                                 <li>Produto 3</li>
                             </ul>
+
+                            {/* Corrigido para chamar this.handleButtonClick */}
+                            <button className="admin-button" id="adicionar" onClick={this.handleButtonClick}>Adicionar</button>
                         </div>
                     )}
                 </div>

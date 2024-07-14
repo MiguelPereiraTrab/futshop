@@ -4,8 +4,8 @@ import "./Ligas.css";
 
 const ligasLista = [
     { name: "Liga Betclic",  imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png",   link: "../Ligas/Betclic" },
-    { name: "LaLiga", imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png", link: "../Ligas/Laliga" },
-    { name: "Premier League", imgSrc: "../images/Ligas/ligaBetclic/ligaBetclic.png", link: "../Ligas/PremierLeague" },
+    { name: "LaLiga", imgSrc: "../images/Ligas/LaLiga/LaLiga.png", link: "../Ligas/Laliga" },
+    { name: "Premier League", imgSrc: "../images/Ligas/PremierLeague/PremierLeague.png", link: "../Ligas/PremierLeague" },
 
 ];
 
@@ -14,9 +14,9 @@ const LigasHomePage = () => {
         <>
             <Header></Header>
             <div className="container mt-8">
-                <div className="row mt-3">
+            <div className="row mt-3">
                     {ligasLista.map((league, index) => (
-                        <div key={index} className="col-md-4 mb-4">
+                        <div key={index} className="col-md-4 mb-4" style={{ marginTop: '20vh' }}>
                             <div className="card h-100">
                                 <img src={league.imgSrc} className="card-img-top" alt={league.name} />
                                 <div className="card-body d-flex flex-column">

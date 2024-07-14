@@ -183,7 +183,7 @@ a.noUnderline:hover {
 }
 
 div.carrinho-dropdown button#FinalizaCompra {
-    background-color: (101, 20, 15);
+    background-color: rgb(101, 20, 15);
     margin-top: 10px;
     color: white;
     border: none;

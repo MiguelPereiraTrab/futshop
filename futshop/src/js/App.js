@@ -15,6 +15,8 @@ import Retro from "../Retro/Retro";
 import RetroHomePage from "../Retro/RetroHomePage";
 import Selecoes from "../Selecoes/Selecoes";
 import SelecoesHomePage from "../Selecoes/SelecoesHomePage";
+import Adicionar from "./Adicionar";
+import Carrinho from "./Carrinho";
 import {
     imageListBetclic,
     imageListLaliga,
@@ -35,6 +37,8 @@ class App extends Component {
                         <Route path="/Login2" element={<Login2 />} />
                         <Route path="/Registar" element={<Registar />} />
                         <Route path="/Artigo" element={<Artigo />} />
+                        <Route path="/Adicionar" element={<Adicionar />} />
+                        <Route path="/Carrinho" element={<Carrinho />} />
 
 
                         <Route path="/Ligas" element={<LigasHomePage />} />

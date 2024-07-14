@@ -65,8 +65,10 @@ class Perfil extends Component {
   handleButtonClick = (e) => {
     const buttonId = e.currentTarget.id;
     if (buttonId === 'logout') {
+      localStorage.removeItem('isUserLoggedIn');
+      localStorage.removeItem('userId');
+      localStorage.removeItem('isUserAdmin');
       window.location.href = '/';
-      localStorage.setItem('isUserLoggedIn', 'false');
     }
   };
 
@@ -87,9 +89,6 @@ class Perfil extends Component {
       <div>
         <Header />
         <div className="profile-container">
-          <div className="profile-image-container">
-            <div className="profile-image-square"></div>
-          </div>
           <div className="profile-info">
             <div className="profile-info-item">
               <label>Nome:</label>

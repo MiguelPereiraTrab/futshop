@@ -20,6 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 30vh;
 }
 
 .image-list-item {
@@ -39,6 +40,5 @@
 }
 
 .images {
-    margin-top: 80px;
     color: white;
 }

@@ -61,7 +61,7 @@ class Artigo extends Component {
                 onChange={this.handleQuantityChange}
               />
             </div>
-            <button onClick={this.handleAddToCart}>Adicionar ao Carrinho</button>
+            <button className="addcarrinho" onClick={this.handleAddToCart}>Adicionar ao Carrinho</button>
           </div>
         </div>
       </div>

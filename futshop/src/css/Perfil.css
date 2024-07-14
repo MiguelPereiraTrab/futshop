@@ -6,18 +6,7 @@
     margin-top: 80px;
   }
   
-  .profile-image-container {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-  }
-  
-  .profile-image-square {
-    width: 100%;
-    height: 100%;
-    background-color: #ddd; /* Cor de fundo temporária */
-  }
-  
+
   .profile-info-item {
     margin-bottom: 10px;
     color: white;

@@ -1,8 +1,7 @@
 .content {
-
     background-size: 20%;
     background-position: center;
-    color: black;
+    color: Black;
     margin: 0;
     padding: 10px;
     display: flex;
@@ -16,7 +15,7 @@
     width: 45%;
 }
 .content-wrapper {
-    margin-top: 150px;
+    margin-top: 0px;
     display: flex;
     justify-content: space-around; /* Alinha os conteúdos lado a lado */
     flex: 1;
@@ -26,9 +25,7 @@
         max-width: 200px; /* Define a largura máxima da imagem */
         height: auto;
         border-radius: 10px;
-        margin: 20px 0;
-    
-    
+        margin: 10px 0;
 }
 
 .button {
@@ -47,8 +44,10 @@
 }
 .content h2 {
     font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    color: white;
 }
 
 .content h3 {
     font-size: 16px; /* Ajuste o tamanho conforme necessário */
+    color: white;
 }
