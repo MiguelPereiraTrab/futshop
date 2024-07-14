@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/Login2.css';
 import Header from './Header';
 
+const url = "https://futshop2024.azurewebsites.net"
+
 class Login2 extends Component {
   handleRegister = () => {
     window.location.href = "/Registar";
@@ -29,7 +31,7 @@ class Login2 extends Component {
     };
 
     try {
-      const response = await fetch('https://localhost:7090/api/login', {
+      const response = await fetch('${url}/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

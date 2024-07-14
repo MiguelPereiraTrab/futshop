@@ -2,17 +2,21 @@ import React, { Component } from 'react';
 import Header from './Header';
 import "../css/ArtigosAdmin.css";
 
+const url = "https://futshop2024.azurewebsites.net"
+
 class ArtigosAdmin extends Component {
    state={
         Artigos: []
     }
+
+    
 
     async componentDidMount(){
         var requestOptions = {
           method: 'GET',
           redirect: 'follow'
         };
-        let res = await fetch(`https://localhost:7090/api/artigos`, requestOptions).catch(error => console.log('error', error));;
+        let res = await fetch('${url}/api/artigos', requestOptions).catch(error => console.log('error', error));;
         let result = await res.json();
         if (res.status === 200){
           console.log(result);

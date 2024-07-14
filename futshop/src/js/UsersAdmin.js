@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from './Header';
 import "../css/UsersAdmin.css";
 
+const url = "https://futshop2024.azurewebsites.net"
+
 class UsersAdmin extends Component {
    state={
         Users: []
@@ -12,7 +14,7 @@ class UsersAdmin extends Component {
           method: 'GET',
           redirect: 'follow'
         };
-        let res = await fetch(`https://localhost:7090/api/utilizadores`, requestOptions).catch(error => console.log('error', error));;
+        let res = await fetch('${url}/api/utilizadores', requestOptions).catch(error => console.log('error', error));;
         let result = await res.json();
         if (res.status === 200){
           console.log(result);

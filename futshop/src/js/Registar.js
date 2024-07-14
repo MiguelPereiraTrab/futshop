@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/Registar.css';
 import Header from './Header';
 
+const url = "https://futshop2024.azurewebsites.net"
+
 class Registar extends Component {
 
   constructor(props) {
@@ -41,7 +43,7 @@ handleRegister = async () => {
       },
       Dataformatada: registerDataNascimento
     };
-    await fetch(`https://localhost:7090/api/register`, {
+    await fetch('${url}/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

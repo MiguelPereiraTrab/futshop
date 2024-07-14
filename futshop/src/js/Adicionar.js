@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../css/Adicionar.css';
 import Header from './Header';
 
+const url = "https://futshop2024.azurewebsites.net"
+
 class Adicionar extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +39,7 @@ class Adicionar extends Component {
     };
   
     try {
-      const response = await fetch('https://localhost:7090/api/artigo', {
+      const response = await fetch('${url}/api/artigo', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

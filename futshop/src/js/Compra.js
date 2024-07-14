@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import '../css/Compra.css';
 
+
+const url = "https://futshop2024.azurewebsites.net"
+
 class Compra extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +29,7 @@ class Compra extends Component {
       method: 'GET',
       redirect: 'follow'
     };
-    let res = await fetch(`https://localhost:7090/api/user/${userId}`, requestOptions).catch(error => console.log('error', error));
+    let res = await fetch('${url}/api/user/${userId}', requestOptions).catch(error => console.log('error', error));
     if (res !== undefined && res.status==200){
       let result = await res.json();
       this.setState(() => ({

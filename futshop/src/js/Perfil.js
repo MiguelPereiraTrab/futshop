@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash, faSave } from '@fortawesome/free-solid-svg-icons'; // Importe o ícone de salvar
 import '../css/Perfil.css';
 
+const url = "https://futshop2024.azurewebsites.net"
 class Perfil extends Component {
 
   
@@ -30,7 +31,7 @@ class Perfil extends Component {
       method: 'GET',
       redirect: 'follow'
     };
-    let res = await fetch(`https://localhost:7090/api/user/${userId}`, requestOptions).catch(error => console.log('error', error));
+    let res = await fetch('${url}/api/user/${userId}', requestOptions).catch(error => console.log('error', error));
     if (res !== undefined && res.status==200){
       let result = await res.json();
       this.setState(() => ({
